@@ -1,0 +1,85 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 BBDD\
+PRESENTACION\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\partightenfactor0
+
+\b \cf0 Consistencia
+\b0 \uc0\u8232 Se refiere a que los datos deben seguir reglas l\'f3gicas y ser uniformes en toda la base de datos. Esto se asegura mediante restricciones, reglas de negocio y transacciones.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\b Integridad
+\b0 \
+Se refiere a que los datos sean correctos, completos y coherentes entre s\'ed. La integridad de datos es clave en bases de datos.\
+\
+
+\b Rendimiento
+\b0 \
+Se refiere a la rapidez con la que la base de datos puede ejecutar consultas, insertar datos o actualizar registros.\
+\
+
+\b Escalabilidad
+\b0 \
+Es la capacidad de la base de datos para crecer en tama\'f1o o n\'famero de usuarios sin degradar el rendimiento.\
+\
+\
+
+\b Test:
+\b0 \
+
+\b 1.
+\b0 Fichero constante.\
+\
+
+\b 2.
+\b0 M\'e9todos de acceso a ficheros:\
+\
+Encadenado (a)\
+Cada registro apunta al siguiente.\
+Para leer un registro, normalmente hay que seguir los enlaces desde el principio.\
+Tipo de acceso: Secuencial (2)\
+\
+Indexado (b)\
+Se crea un \'edndice que permite localizar los registros r\'e1pidamente.\
+Se puede leer de manera secuencial usando el \'edndice o directamente saltando a un registro espec\'edfico.\
+Tipo de acceso: Directo o secuencial (3)\
+\
+Calculado o Hash (c)\
+Se calcula la posici\'f3n del registro mediante una funci\'f3n (hash).\
+Permite acceder directamente al registro sin leer todos los anteriores.\
+Tipo de acceso: Directo (1)\
+\
+Relaci\'f3n completa:\
+M\'e9todo de acceso	Tipo de acceso\
+a. Encadenado	2. Secuencial\
+b. Indexado	3. Directo o secuencial\
+c. Calculado/Hash	1. Directo\
+\
+
+\b 3.
+\b0 Falso\
+Los registros no necesitan estar contiguos en el disco o soporte de almacenamiento.\
+Si tenemos 1000 registros, el registro 500 puede estar en cualquier lugar del disco; el sistema lo localiza directamente usando la funci\'f3n de hash o direcci\'f3n, no porque est\'e9 al lado del 499 o 501.\
+\
+
+\b 4.
+\b0 c. La direcci\'f3n se obtiene a partir de la clave mediante un algoritmo\
+\
+
+\b 5
+\b0 .c. El peso de los procesos de inserci\'f3n y borrado en dicho fichero (frecuencia de renovaci\'f3n)\
+\
+
+\b 6
+\b0 .c. Conjunto de datos de distinto tipo relacionados entre s\'ed, junto con un programa de gesti\'f3n de dichos datos\
+
+\b \
+7
+\b0 .cliente-servidor}
